@@ -6,6 +6,7 @@ import Info from "../Info";
 import Skills from "../Skills";
 import {ThemeContext} from "../../context/ThemeContext";
 import {useAnimation} from "../../use/animation";
+import nasimImage from "../../assets/nasim.jpg";
 
 const Profile = () => {
     const { backgroundImage, type } = useContext(ThemeContext);
@@ -14,16 +15,15 @@ const Profile = () => {
         <div className="profile">
             <div className="profile__banner">
                 <div className={`profile__photo ${animation}`} style={{backgroundImage: `url(${backgroundImage})`}} />
-                <img src="https://i.ibb.co/QPDLG6v/T4-CCV1-V4-G-UQ4-KGNEQ1-d074b7ae683a-512.jpg" alt={type} />
+                <img src={nasimImage} alt={type} />
             </div>
             <div className="profile__content">
                 <div className="profile__title">
-                    Emre Baskan
+                    Md.Nasim Hossain
                 </div>
                 <TypedText
                   dataText={
                       [
-                          'Senior JavaScript Engineer',
                           'Frontend Development',
                           'Backend Development'
                       ]
@@ -31,7 +31,7 @@ const Profile = () => {
                 />
                 <SocialLinks/>
                 <Info icon="location">
-                    KYIV / ISTANBUL
+                    Bangladesh
                 </Info>
                 <Skills />
             </div>
@@ -41,7 +41,7 @@ const Profile = () => {
                             Download CV
                         </span>
                 </a>
-                <a href="mailto:3mr3baskan@gmail.com">
+                <a href="mailto:mdnasim6416@gmail.com">
                         <span>
                             Contact Me
                         </span>

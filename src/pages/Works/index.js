@@ -19,14 +19,14 @@ const Works = () => {
     return (
         <div className="page" id="works">
             <Title>
-                Works - Talk is cheap show me the code!
+                Works
             </Title>
             <WorksMenu
                 items={[
                     'react',
-                    'angular',
-                    'vue',
-                    'js'
+                    'js',
+                    'php',
+                    'Machine Learning'
                 ]}
                 selected={selectedType}
                 clicked={handleMenuChange}
