@@ -7,6 +7,8 @@ import Skills from "../Skills";
 import {ThemeContext} from "../../context/ThemeContext";
 import {useAnimation} from "../../use/animation";
 import nasimImage from "../../assets/nasim.jpg";
+// @ts-ignore
+import cv from '../../assets/CV_Md.Nasim Hossain.pdf';
 
 const Profile = () => {
     const { backgroundImage, type } = useContext(ThemeContext);
@@ -36,7 +38,7 @@ const Profile = () => {
                 <Skills />
             </div>
             <div className="profile__contact">
-                <a href="https://drive.google.com/file/d/1rzAuF9qNB0ZqHMFamNG_b00bW2oKoAya/view?usp=sharing" target="_blank" rel="noreferrer">
+                <a href={cv} target="_blank" rel="noreferrer">
                         <span>
                             Download CV
                         </span>

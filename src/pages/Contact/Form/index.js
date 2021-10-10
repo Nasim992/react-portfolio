@@ -39,10 +39,10 @@ const ContactForm = () => {
         async onSubmit(values) {
             try {
                 await emaijs.send(
-                    'gmail',
-                    'contact-form',
+                    'service_uls9d6d',
+                    'template_xpnwue8',
                     values,
-                    'user_ivLokzQVLoHuv1nbXEhJi');
+                    'user_SVWS4BNTU3ZCIBpUVimY7');
                 form.resetForm();
                 setSuccessResult('Thank you! Your message has been successfully sent');
                 setTimeout(() => {
@@ -62,7 +62,8 @@ const ContactForm = () => {
     }
 
     return (
-        <form onSubmit={form.handleSubmit}>
+        // <form onSubmit={form.handleSubmit}>
+        <form action="mailto:mdnasim6416@gmail.com">
             <div className="contact-form">
                 <div className="contact-form__control">
                     <input value={form.values.name} onChange={form.handleChange} type="text" placeholder="Full Name" name="name"/>

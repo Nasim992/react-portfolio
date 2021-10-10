@@ -26,6 +26,7 @@ const Works = () => {
                     'react',
                     'js',
                     'php',
+                    'cpp',
                     'Machine Learning'
                 ]}
                 selected={selectedType}
